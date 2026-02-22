@@ -6,6 +6,7 @@ import TopNav from '../components/layout/TopNav'
 import { AdminStats } from '../components/widgets/StatsCards'
 import BlackoutPanel from '../components/widgets/BlackoutPanel'
 import CityHeatMap from '../components/charts/CityHeatMap'
+import EdmontonMap from '../components/charts/EdmontonMap'
 import StatusBadge from '../components/ui/StatusBadge'
 import Button from '../components/ui/Button'
 import EnergyLineChart from '../components/charts/EnergyLineChart'
@@ -55,12 +56,12 @@ export default function AdminDashboard() {
                 <div className="bg-white rounded-2xl shadow-card p-6">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <h2 className="text-base font-semibold text-charcoal">Neighbourhood Load Map</h2>
-                      <p className="text-xs text-slate mt-0.5">Real-time consumption across city zones</p>
+                      <h2 className="text-base font-semibold text-charcoal">Edmonton Grid Demand Map</h2>
+                      <p className="text-xs text-slate mt-0.5">Live demand &amp; blackout risk per community · click any neighbourhood</p>
                     </div>
                     <StatusBadge status="warning">87.7% Utilization</StatusBadge>
                   </div>
-                  <CityHeatMap />
+                  <EdmontonMap />
                 </div>
 
                 {/* Grid-wide consumption */}

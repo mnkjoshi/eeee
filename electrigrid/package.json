@@ -10,13 +10,15 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.31",
+    "leaflet": "^1.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.26.2",
-    "framer-motion": "^11.3.31",
     "recharts": "^2.12.7",
-    "zustand": "^4.5.5",
-    "clsx": "^2.1.1"
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
